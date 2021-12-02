@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a, button{
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+header{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.7);
+        .logo{
+            width: 50px;
+                img{
+                    width: 100%;
+                }
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-gap: 15px;
+            margin: auto;
+                a{
+                    font-size: 18px;
+                    color: black;
+                }
+        }
+        .menu{
+            width: 40px;
+                img{
+                    width: 100%;
+                }
+        }
+}
+
+.heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+        h1{
+            font-size: 28px;
+        }
+        
+}
+
+section{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    grid-gap: 15px;
+    margin: auto;
+    margin-top: 20px;
+        .box{
+            border-radius: 10px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,.7);
+            padding-top: 10px;
+                img{
+                    width: 50%;
+                }
+                p{
+                    font-size: 18px;
+                    padding: 10px;
+                }
+        }
+}
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+        .animation_logo{
+            position: relative;
+            width: 50px;
+            transform: scale(0);
+            top: 47%;
+            left: 47%;
+            transition: 2s;
+        }
+}
+
+.modal_off{
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+.animation_active1{
+    // width: 50px !important;
+    transform: scale(3) !important;
+}
+
+.animation_active2{
+    top: 12px !important;
+    left: 15px !important;
+    transform: scale(1) !important;
+}
